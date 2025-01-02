@@ -9,15 +9,19 @@ import { dark, neobrutalism } from '@clerk/themes'
 import Footer from '@/components/Footer'
 import { Toast } from '@/components/ui/toast'
 import { Toaster } from '@/components/ui/toaster'
+import {Jost} from 'next/font/google'
+
+const jost=Jost({subsets:['latin']})
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={jost.className}>
       <ClerkProvider appearance={{
         baseTheme:neobrutalism,
       }}>
       <Navbar/>
-      <main className='flex flex-col min-h-[calc(100vh-3.5rem-1px)]'>
+      <main className='flex flex-col min-h-[calc(100vh-3.5rem-1px)] grainy-light'>
       <div className='flex-1 flex flex-col h-full'>
       {children}
       </div>

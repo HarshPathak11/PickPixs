@@ -198,7 +198,7 @@ export default function Home() {
             5-year print warranty
           </li>
           <div className="flex justify-center">
-            <Link href='/' className="mx-auto mt-8">
+            <Link href='/configure/upload' className="mx-auto mt-8">
               <Button  > Create your own Case <ArrowRight/></Button>
             </Link>
           </div>

@@ -20,7 +20,7 @@ function Navbar() {
                 null
                 }
                 <SignedIn>
-                <Link href='/'><Button variant="ghost">Create Case <ArrowRight className='ml-1.5'/></Button></Link>
+                <Link href='/configure/upload'><Button variant="ghost">Create Case <ArrowRight className='ml-1.5'/></Button></Link>
                 <SignOutButton><Button>Logout</Button></SignOutButton>
                 </SignedIn>
                 <SignedOut>

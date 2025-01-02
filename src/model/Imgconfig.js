@@ -16,7 +16,23 @@ const Configschema=new mongoose.Schema(
         },
         configuredUrl:{
             type:String,
-        }
+        },
+        color: {
+      type: String,
+      enum: ["black", "blue", "rose"],
+    },
+    model: {
+      type: String,
+      enum: ["iphonex", "iphone11", "iphone12", "iphone13", "iphone14", "iphone15"],
+    },
+    material: {
+      type: String,
+      enum: ["silicone", "polycarbonate"],
+    },
+    finish: {
+      type: String,
+      enum: ["smooth", "textured"],
+    }
     },
     {timestamps:true}
 )
